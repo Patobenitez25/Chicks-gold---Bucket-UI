@@ -6,14 +6,15 @@ const [Y, setY] = useState(3);
 const [Z, setZ] = useState(4);
 const [solution, setSolution] = useState([]);
 const [error, setError] = useState("");
-const API_URL = process.env.REACT_APP_API_URL;
+const API_URL = import.meta.env.VITE_API_URL;
 
 const handleSolve = async () => {
     setSolution([]);
     setError("");
+    console.log("API URL:", API_URL);
 
     try {
-    const response = await fetch(`${API_URL}/solve`, {
+    const response = await fetch(`${API_URL}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ X, Y, Z }),
