@@ -18,7 +18,8 @@ Este es el frontend de la aplicación **Water Jug Solver**, que permite a los us
 2.Instalar dependencias:
   npm install
   
-3.Configurar la URL del backend (en .env si usas un archivo de configuración, o directamente en fetch dentro del código).
+3.Configurar la URL del backend en caso de iniciar el proyecto localmente en ./src/Home.jsx:17 (con backend desplegado localmente)
+   
 
 4.Iniciar la aplicación:
 
