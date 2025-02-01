@@ -12,18 +12,19 @@ Este es el frontend de la aplicación **Water Jug Solver**, que permite a los us
 
 1. Clonar el repositorio:
 
-   git clone https://github.com/Patobenitez25/Chicks-gold---Bucket-UI.git
-   cd frontend
+         git clone https://github.com/Patobenitez25/Chicks-gold---Bucket-UI.git
+         cd frontend
 
 2.Instalar dependencias:
-  npm install
+         
+      npm install
   
 3.Configurar la URL del backend en caso de iniciar el proyecto localmente en ./src/Home.jsx:17 (con backend desplegado localmente)
    
 
 4.Iniciar la aplicación:
 
-  npm run dev
+     npm run dev
 
 La aplicación estará disponible en http://localhost:5173 (o el puerto que indique Vite), o en https://chicks-gold-bucket-ui.vercel.app/.
 
