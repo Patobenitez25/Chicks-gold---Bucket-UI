@@ -24,8 +24,12 @@ Este es el frontend de la aplicación **Water Jug Solver**, que permite a los us
 
   npm run dev
 
-La aplicación estará disponible en http://localhost:5173 (o el puerto que indique Vite), o en .
+La aplicación estará disponible en http://localhost:5173 (o el puerto que indique Vite), o en https://chicks-gold-bucket-ui.vercel.app/.
 
+ 🚀 Componente principal:
+   El componente principal (WaterJugApp.jsx) maneja la entrada del usuario,
+   envía una solicitud al backend y muestra los pasos de la solución de manera clara.
+   
 🛠️ Tecnologías utilizadas
   React (Vite)
   CSS puro para los estilos
