@@ -6,13 +6,14 @@ const [Y, setY] = useState(3);
 const [Z, setZ] = useState(4);
 const [solution, setSolution] = useState([]);
 const [error, setError] = useState("");
+const API_URL = process.env.REACT_APP_API_URL;
 
 const handleSolve = async () => {
     setSolution([]);
     setError("");
 
     try {
-    const response = await fetch("https://chicks-gold-bucket-challenge-backend-pg7jkoudg.vercel.app/solve", {
+    const response = await fetch(`${API_URL}/solve`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ X, Y, Z }),
