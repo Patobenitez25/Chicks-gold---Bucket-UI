@@ -12,7 +12,7 @@ const handleSolve = async () => {
     setError("");
 
     try {
-    const response = await fetch("http://localhost:3001/solve", {
+    const response = await fetch("https://chicks-gold-bucket-challenge-backend-pg7jkoudg.vercel.app/solve", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ X, Y, Z }),
